@@ -1,0 +1,107 @@
+#inner-body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#loader {
+    display: none;
+    margin: auto;
+    width: 100vw;
+    text-align: center;
+}
+
+#refresh {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 auto;
+    display: none;
+}
+
+#refresh:hover {
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#refresh:hover #refresh-fill {
+    fill: #69be94;
+}
+
+#content-wrapper {
+    margin: 10em auto;
+}
+
+#logo {
+    display: flex;
+}
+
+#search-container {
+    margin: 1em auto;
+    align-items: center;
+    display: flex;
+    padding: 0 1em;
+    border: 1px solid #bcbcbc;
+    border-radius: 25px;
+    /* box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.1); */
+    outline: none;
+    max-width: 566px;
+    height:44px;
+}
+  
+#search-container svg {
+    fill: #bcbcbc;
+}
+
+#search {
+    padding: 0 1em;
+    border: 0;
+    border-radius: 25px;
+    width: 100%; 
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+}
+
+#search-container form, #search-container input {
+    margin:  0;
+    width: 100%;
+}
+
+#search input:-internal-autofill-selected, input:-webkit-autofill {
+    background-color: #ffffff !important;
+} 
+
+#search-icon {
+    animation-name: 'none';
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+
+
+#img-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-container div {
+    display: inline-block;
+    margin: 1em;
+}
+
+#img-container div:hover {
+    -webkit-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+}
